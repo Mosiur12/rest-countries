@@ -6,7 +6,7 @@ const loadCountries = () => {
 
 
 const displayCountries = countries =>{
-    console.log (countries);
+    // console.log (countries);
     const countriesHTML = countries.map (country => getCountries (country));
     // console.log(countriesHTML[0]);
     const container = document.getElementById('country');
@@ -16,9 +16,9 @@ const displayCountries = countries =>{
   const getCountries = country => {
   
     return `
-    <div> 
+    <div class = "country"> 
     <h1> ${country.name} </h1>
-    
+    <img src = "${country.flags.png}">
     </div>
     
     
